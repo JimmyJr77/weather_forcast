@@ -17,45 +17,54 @@
 <header class="container-fluid bg-primary text-center p-4 color-blend" id="header">
     <h1 class="text-white"> MAGIC &#x1f3b1; BALL Weather Forecaster </h1>  
     <h4 class="text-white mt-4"> 50% of the time, right every time! </h1>  
-
-  </header>
+</header>
 
 <!--MAIN BODY-->
-<main class="container">
-    <section class="row justify-content-center ">
-        <div id="split=screen" class="col-6 text-center">
+<main class="container mb-4">
+
+    <div style="height:25px"></div>
+    
+    <div class="d-flex justify-content-between">
+        <!-- Magic 8 ball search -->
+        <section class="col-5 text-center">
             <div class="row justify-content-center">
                 <h3 class="mt-4">Predict the weather for a City: </h3>
                 <p>Close your eyes and concentrate on the city for which you want to predict the weather (& type it below):</p>
-                <form class="d-flex row justify-content-center form-floating px-4" >
-                    <input id=city-input-box type="text" class="text border-primary-subtle mb-3" name="selected-city">
-                    <button id="shake-button" type="submit" class="btn bg-black text-white btn-lg" aria-pressed="true">Shake 8 Ball for Prediction</button>
-                </form>
-                    <div id="shaking-div" class=" col eightball">&#x1f3b1</div>
-                    <div class="row border-primary-subtle p-2 mb-2 border-opacity-25 " id="search-history-container"></div>
+                <form class="form-floating mb-3" id="city-input-form">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="city" id="city" placeholder="Enter city name">
+                        <button type="submit" class="btn btn-outline-secondary btn-block btn-lg" aria-pressed="true">Search</button>
+                    </div>
+                </form>                
+                    <div id="shaking-div" class="eightball">&#x1f3b1</div>
             </div>
-        </div>    
-    </section>     
+        </section>
+    
+        <!-- Previous searches  -->
+        <section class="col-3 text-center current-weather-container">
+            <h3 class="mt-4">Previous Searches</h3>
+            <div class="row border-primary-subtle p-3 mb-2 border-opacity-25 " id="search-history-container"></div>
+        </section>
 
-    <div style="height:20px"></div>
+        <!-- Current weather -->
+        <section class="col-3 text-center">
+            <h3 class="selected-city mt-4" id="selected-city"></h3>
+            <h5 class="date-today mt-2" id="date-today"></h2>
+            <img class="weather-icon mt-2" id="weather-icon">
+            <p class="temp" id="temp"></p>
+            <p class="wind-mph" id="wind-mph"></p>
+            <p class="humidity" id="humidity"></p>
+        </section>
 
-<!--WEATHER FORCAST-->
-    <section class="row justify-content-center border">
-        <div class="col-8 m-2">
-            <div class="current-weather-container p-3" id=current-weather>
-                <h2 class="city" id="current-city"></h2>
-                <h3 class="current-date" id="current-date"></h3>
-                <img class="weather-icon" id="weather-icon">
-                <p class="temperature" id="temperature"></p>
-                <p class="wind-speed" id="wind-speed"></p>
-                <p class="humidity" id="current-humidity"></p>
-            </div>
-            <!--5 day forecast cards container-->
-            <div class="5-days-forecast row " id="5-day-forecast"></div>
-        </div>
-    </section>
+    </div>
 
+<!--WEATHER FORECAST-->
+    <section class="row bg justify-content-between border-top border-3 border-danger p-4 m-4 text-center" id="weather-forecast"></section>
 
+</main>
+
+<footer class="container-fluid bg-primary text-center p-4 color-blend" id="header">
+</footer>
 
 <!-- JAVASCRIPTS -->
 
@@ -70,6 +79,6 @@
 
     </script>
     <!--SCRIPTS.JS-->
-    <script src="assets/js/script.js"></script>   
+    <script src="Assets/js/script.js"></script>   
 </body>
 </html>
