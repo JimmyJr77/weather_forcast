@@ -21,21 +21,20 @@
 
 <!--MAIN BODY-->
 <main class="container mb-4">
-
     <div style="height:25px"></div>
     
-    <div class="d-flex justify-content-between">
+    <div class="d-flex flex-column-reverse flex-lg-row justify-content-between">
 
         <!-- Previous searches  -->
-        <section class="col-3 text-center current-weather-container">
-            <h3 class="mt-4">Previous Searches</h3>
+        <section class="col-12 col-lg-3 text-center current-weather-container mt-4 mt-lg-0">
+            <h3>Previous Searches</h3>
             <div class="row border-primary-subtle p-3 my-2 border-opacity-25 " id="search-history-container"></div>
         </section>
 
         <!-- Magic 8 ball search -->
-        <section class="col-5 text-center">
+        <section class="col-12 col-lg-5 text-center mt-4">
             <div class="row justify-content-center">
-                <h3 class="mt-4">Predict the weather for a City: </h3>
+                <h3>Predict the weather for a City: </h3>
                 <p>Close your eyes and concentrate on the city for which you want to predict the weather (& type it below):</p>
                 <form class="form-floating mb-3" id="city-input-form">
                     <div class="input-group">
@@ -43,15 +42,15 @@
                         <button type="submit" id="submit-btn" class="btn btn-outline-secondary btn-block btn-lg" aria-pressed="true">Search</button>
                     </div>
                 </form>                
-                    <div id="shaking-div" class="eightball">&#x1f3b1</div>
+                <div id="shaking-div" class="eightball">&#x1f3b1</div>
             </div>
         </section>
     
 
         <!-- Current weather -->
-        <section class="col-3 text-center">
-            <h3 class="selected-city mt-4" id="selected-city"></h3>
-            <h5 class="date-today mt-2" id="date-today"></h2>
+        <section class="col-12 col-lg-3 text-center mt-4">
+            <h3 class="selected-city" id="selected-city"></h3>
+            <h5 class="date-today mt-2" id="date-today"></h5>
             <img class="weather-icon mt-2" id="weather-icon">
             <p class="temp" id="temp"></p>
             <p class="wind-mph" id="wind-mph"></p>
