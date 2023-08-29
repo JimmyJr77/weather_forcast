@@ -1,7 +1,81 @@
-.color-blend {
+/* COLOR SCHEMES */
+
+.color-midnight {
+    background-color: midnightblue;
+}
+.color-blend-blue-midnight {
     width: 100%;
-    background: linear-gradient(to top, red, blue);
+    background: linear-gradient(to top, dodgerblue, midnightblue);
   }
+
+.color-blue {
+    background-color: dodgerblue;
+}
+
+.color-blend-orange-blue {
+    width: 100%;
+    background: linear-gradient(to top, orange, dodgerblue);
+  }
+
+.text-purple {
+    color: purple;
+}
+
+.color-blend-yellow-orange {
+    width: 100%;
+    background: radial-gradient(circle, yellow, orange);
+}
+
+.color-blend-red-orange {
+    width: 100%;
+    background: linear-gradient(to top, red, orange);
+}
+
+.color-red {
+    width: 100%;
+    background: dark;
+}
+
+.color-blend-purple-red {
+    width: 100%;
+    background: linear-gradient(to top, rgb(81, 21, 81), red);
+}
+
+/* FONTS */
+
+h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 72px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+/* BUTTONS */
+
+#submit-btn {
+    background-color: dodgerblue;
+    color:white;
+}
+
+#submit-btn:hover {
+    background-color: midnightblue;
+    color:white;
+}
+
+.search-history-btn {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+}
+
+.search-history-btn:hover {
+    background-color: midnightblue;
+    color:white;
+}
+
 
 /* EIGHTBALL SHAKE VISUALIZATION */
 
@@ -29,4 +103,29 @@
     animation-iteration-count: 1;
 }
 
+/* WEATHER CARD */
 
+.weather-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: dodgerblue;
+    color: white;
+    margin-bottom: 10px;  
+    border-radius: 10px; 
+}
+
+.forecast-date {
+    width: 300px;  
+    text-align: left;
+}
+
+.forecast-icon-container {
+    flex-basis: 50px;  
+}
+
+.forecast-temp,
+.forecast-wind,
+.forecast-humidity {
+    flex-basis: 150px; 
+    text-align: left;
+}
