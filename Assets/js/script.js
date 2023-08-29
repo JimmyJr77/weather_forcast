@@ -61,7 +61,8 @@ $(document).ready(function() {
         WeatherIconEl.attr("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
         .css({
             "background-color": "dodgerblue",
-            "margin-bottom": "10px"
+            "margin-bottom": "10px",
+            "border-radius": "8px"
         });        
         updateWeatherCard(tempEl, `<strong>Temperature:</strong> ${data.main.temp}°F`);
         updateWeatherCard(windEl, `<strong>Wind Speed:</strong> ${data.wind.speed} MPH`);
