@@ -58,6 +58,7 @@ Select a city from your previous searches to render current and forecasted weath
 
   * https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys for API information
   * https://openweathermap.org/forecast5 for API format
+  * https://getbootstrap.com/docs for layout and design
   * https://chat.openai.com for support dialogue
 
 ## License
