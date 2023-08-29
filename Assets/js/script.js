@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+    // Make the 8ball shake on click
+    // Using jQuery
+    $(document).on('click', function() {
+        // Add the "shake" class to the element with id "shaking-div"
+        $('#shaking-div').addClass('shake');
+        
+        // Remove the "shake" class after 0.5 seconds
+        setTimeout(function() {
+            $('#shaking-div').removeClass('shake');
+        }, 1000); // 1 seconds = 1000 milliseconds
+    });
+
     // Constants and Variables
     const apiKey = "ffc69f7838e574f5064cf6010c451746";
     const NUM_DAYS_TO_FORECAST = 5;
@@ -46,7 +58,11 @@ $(document).ready(function() {
     function updateUIElements(data) {
         selectedCityEl.text(data.name);
         DateEl.text(dayjs().format("dddd, MMM DD, YYYY"));
-        WeatherIconEl.attr("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+        WeatherIconEl.attr("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
+        .css({
+            "background-color": "dodgerblue",
+            "margin-bottom": "10px"
+        });        
         updateWeatherCard(tempEl, `<strong>Temperature:</strong> ${data.main.temp}°F`);
         updateWeatherCard(windEl, `<strong>Wind Speed:</strong> ${data.wind.speed} MPH`);
         updateWeatherCard(humidityEl, `<strong>Humidity:</strong> ${data.main.humidity}%`);
