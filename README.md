@@ -1,102 +1,96 @@
-# 06 Server-Side APIs: Weather Dashboard
+# Magic 8 Ball Weather Forecaster
 
-## Your Task
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
-Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+## Description
+#### Motivation:
+The driving force behind developing this app was to never be surprised by the rain or the scortching heat.
 
-Use the [5 Day Weather Forecast](https://openweathermap.org/forecast5) to retrieve weather data for cities. The base URL should look like the following: `https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}`. After registering for a new API key, you may need to wait up to 2 hours for that API key to activate.
+#### Why Build:
+This app was created to provide users with an aesthetically pleasing and easy to use weather app.
 
-**Hint**: Using the 5 Day Weather Forecast API, you'll notice that you will need to pass in coordinates instead of just a city name. Using the OpenWeatherMap APIs, how could we retrieve geographical coordinates given a city name?
+#### Problem Solved:
+In an age of global weather uncertainty, this arms climate activists with a chance to survive one more weathered day, potentially changing the tide in the fight against big oil.
 
-You will use `localStorage` to store any persistent data. For more information on how to work with the OpenWeather API, refer to the [Full-Stack Blog on how to use API keys](https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys).
+#### What Was Learned:
+On the technical side, I've solidified my understanding of core skills like HTML, CSS, and JavaScript, which are essential for front-end development. I've gained hands-on experience with API interactions, learning how to fetch data from an external weather service and dynamically update the user interface based on that data. I've also refined my skills in date manipulation using libraries like Day.js, performed intricate DOM manipulations to refresh the UI, and delved into the principles of responsive design to make my app adaptable across various screen sizes. These technical skills have seamlessly integrated with my growing understanding of design and user experience. I've been forced to consider user-centric design elements, such as creating intuitive UI components, managing loading states, and providing effective error messaging. I've also been introduced to the finer points of crafting an engaging and intuitive user interface, complete with readable weather displays and informative icons. Overall, this project has served as a comprehensive tutorial for me in both technical development and design principles.
 
-## User Story
+## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Credits](#credits)
+  * [License](#license)
+  * [Badges](#badges)
+  * [Features](#features)
+  * [How to Contribute](#how-to-contribute)
 
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
+## Installation Instructions
+#### Step 1:
+Access the application at https://jimmyjr77.github.io/weather_forcaster/
+#### Step 2:
+Clone this GitHub repository to your local machine using git clone.
 
-## Acceptance Criteria
+#### Step 3:
+Navigate to the root directory of the project in the terminal.
 
-```
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the wind speed
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-```
+#### Step 4:
+Install the required dependencies by running npm install.
 
-## Mock-Up
+## Usage
+#### Example 1:
+Once you have installed the necessary dependencies, you can run the Employee Tracker application by executing the following command in the terminal: npm start
 
-The following image shows the web application's appearance and functionality:
+#### Example 2:
+You will see a terminal prompt that will ask you what you'd like to do. Select from the prompt to view all departments, view all roles, view all employees, add a department, add a role, add an employee, or update an employee role.
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Atlanta.](./Assets/06-server-side-apis-homework-demo.png)
+#### Example 3:
+Follow the follow-on prompts answering additional questions.
 
-## Grading Requirements
+## Credits
+#### Individual Credits:
+  * I worked with an AskBCS representative, @yojeil. He suggested I break up the prompts. While I didn't take that suggestion, I understand the direction. 
+  * I also worked with @smaharaj, who confirmed my assumption on what the problem and fix were. 
+  * ChatGPT supported with general back and forth dialogue to better understand concepts and problem solve. 
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
 
-This Challenge is graded based on the following criteria: 
+#### Tutorials Followed:
 
-### Technical Acceptance Criteria: 40%
+  * https://github.com/SBoudrias/Inquirer.js
+  * https://dev.mysql.com/doc
+  * https://chat.openai.com
 
-* Satisfies all of the above acceptance criteria plus the following:
+## License
+MIT License
 
-    * Uses the OpenWeather API to retrieve weather data.
+## Badges
+  * [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-    * Uses `localStorage` to store persistent data.
+  * ![Express Badge](https://img.shields.io/badge/Express.js-8A2BE2) 
+  
+  * ![Node Badge](https://img.shields.io/badge/Node.js-8A2BE2) 
 
-### Deployment: 32%
+## Features
+  * view all departments
+  ![view departments](/assets/images/view-departments.png)
+  * view all roles
+  ![view roles](assets/images/view-roles.png)
+  * view all employees
+  ![view employees](assets/images/view-employees.png)
+  * add a department
+  ![add department](assets/images/add-department.png)
+  * add a role
+  ![add role](assets/images/add-role.png)
+  * add an employee
+  ![add employee](assets/images/add-an-employee.png)
+  * update an employee role
+  ![update employee role](assets/images/update-employee-role.png)
 
-* Application deployed at live URL.
+## How to Contribute
+Contributions to the Employee Tracker application are encouraged and can be made by forking the repository on GitHub, creating a new branch, making changes to enhance functionality, and submitting a pull request. The maintainers will review the changes, provide feedback if needed, and merge approved contributions into the main branch. This collaborative process allows contributors to actively improve the Note Taker application and make it more valuable for users.
 
-* Application loads with no errors.
+## Questions 
+If you have any questions about the content, instructions, or how to get involved in this project, please contact: 
 
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+  * Jimmy O'Brien    
+    GitHub Username: [jimmyjr77](https://github.com/jimmyjr77/)    
+    Email Address: jimmyjr.obrien@gmail.com    
