@@ -37,18 +37,18 @@ Open index.html file
 ## Usage
 #### Access the deployed application:
 Access the deployed application at https://jimmyjr77.github.io/weather_forcaster/
-![landing page](./assets/images/landing-page.png)
+![landing page](/assets/images/landing-page.png)
 
 #### Example 1:
 You can search for a city by typing the city name into the search bar and hit "search". It will save the city to the Previous Searches section and load current and forecasted weather for that city.
-![search for a city](./assets/images/search-bar.png)
-![render current weather](./assets/images/search-render-save.png)
-![render forecasted weather](./assets/images/5-day-sunrise.png)
+![search for a city](/assets/images/search-bar.png)
+![render current weather](/assets/images/search-render-save.png)
+![render forecasted weather](/assets/images/5-day-sunrise.png)
 
 #### Example 2:
 Select a city from your previous searches to render current and forecasted weather data.
-![search previous city & render current weather](./assets/images/recall-previous-top.png)
-![search previous city & render forecasted weather](./assets/images/recall-previous-bottom.png)
+![search previous city & render current weather](/assets/images/recall-previous-top.png)
+![search previous city & render forecasted weather](/assets/images/recall-previous-bottom.png)
 
 ## Credits
 #### Individual Credits:
